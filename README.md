@@ -1,3 +1,19 @@
+# Project's Title
+ToDoList
+
+#Project Description 
+This project provides a simple, user-friendly way to manage your tasks and keep track of your daily to-dos.
+
+#Features 
+Add New Tasks: Easily add new tasks to your list. 
+Mark as Completed: Check off tasks as you finish them. 
+Delete Tasks: Remove tasks you no longer need.
+
+
+#Technologies Used 
+Frontend: React.js 
+Styling: CSS
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
