@@ -3,21 +3,21 @@ import image from './circle.png';
 
 export class List extends Component {
   state = {
-  userInput: " ",
-  List: [ ]
+  userInput: "",
+  list: [ ]
   }
 
   onChangeEvent(e) {
     this.setState({userInput: e}) 
 }
 addItem(input) {
-    if (input === " ") {
+    if (input === "") {
         alert('Please enter an item')
     }
     else {
-    let listArray = this.state.List;
+    let listArray = this.state.list;
     listArray.push(input)
-    this.setState({List: listArray, userInput: ''})
+    this.setState({list: listArray, userInput: ''})
 }
 
 }
@@ -28,9 +28,9 @@ crossWord(event) {
 }
 
 deleteItem() {
-  let listArray = this.state.List;
+  let listArray = this.state.list;
   listArray = [];
-  this.setState({List: listArray})
+  this.setState({list: listArray})
 }
 onSubmitForm(e) {
     e.preventDefault();
@@ -39,7 +39,7 @@ onSubmitForm(e) {
   render() {
     return(
         <div>
-            <form onSubmit={(this.onSubmitForm)}>
+            <form onSubmit={this.onSubmitForm}>
         <div className="container">
         <input onChange={(e) => {this.onChangeEvent(e.target.value)}} type='text' placeholder="Enter your task"
         value={this.state.userInput}/>
